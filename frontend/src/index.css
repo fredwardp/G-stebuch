@@ -65,7 +65,7 @@ button {
   border-radius: 8px;
   transition: border-color 0.25s;
   padding-inline: 1rem;
-  width: 40ch;
+  width: 50ch;
   text-align: left;
   position: relative;
 }
@@ -130,6 +130,20 @@ textarea {
 .send-button:hover {
   border: unset;
   color: #747bff;
+}
+
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 1000px;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
 }
 
 @media (prefers-color-scheme: light) {

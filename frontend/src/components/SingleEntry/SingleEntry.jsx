@@ -13,9 +13,13 @@ const SingleEntry = ({ entry, setAllEntries }) => {
       onMouseLeave={() => setHover((hover) => !hover)}
     >
       <Cross hover={hover} entry={entry} setAllEntries={setAllEntries} />
-      <div>
+      <div className="profile-wrapper">
         {" "}
-        <img src={"http://localhost:619/" + entry.img} alt="" />
+        <img
+          className="profile-img"
+          src={"http://localhost:619/" + entry.img}
+          alt=""
+        />
         <h3
           style={{ marginBlock: " 0.4em 0.4em" }}
         >{`${entry.vorname} ${entry.nachname}`}</h3>

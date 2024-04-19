@@ -147,6 +147,7 @@ const EntriesForm = ({ setAllEntries }) => {
         name="upload"
         id=""
         placeholder="upload profile img"
+        value={newEntry.img}
         onChange={(event) =>
           setNewEntry({ ...newEntry, img: event.target.files[0] })
         }
